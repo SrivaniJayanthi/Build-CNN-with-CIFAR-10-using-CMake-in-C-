@@ -1,0 +1,13 @@
+Value: -2.2090420722961426, Class: plane
+Value: -7.836122035980225, Class: car
+Value: -1.2696466445922852, Class: bird
+Value: -0.08724214136600494, Class: cat
+Value: 4.742500305175781, Class: deer
+Value: -0.1876320093870163, Class: dog
+Value: -0.28054603934288025, Class: frog
+Value: -1.5876189470291138, Class: horse
+Value: -3.029991865158081, Class: ship
+Value: -5.2746968269348145, Class: truck
+
+Highest Value: 4.742500305175781
+Predicted Class: deer

@@ -1,0 +1,45 @@
+cmake_minimum_required(VERSION 3.10)
+project(TestProject1)
+
+# Set C++ standard
+set(CMAKE_CXX_STANDARD 17)
+
+# Include directories
+include_directories(
+    "C:/Users/7501/vcpkg/installed/x64-windows/include"  # vcpkg include directory
+    ${PROJECT_SOURCE_DIR}/Operators/include  # Local 'include' directory for .h files under the Operators folder
+)
+
+# Define source files using the path to main.cpp, ConvLayer1.cpp, and readers.cpp
+file(GLOB SOURCES
+    ${PROJECT_SOURCE_DIR}/src/main.cpp
+
+    ${PROJECT_SOURCE_DIR}/Operators/src/ConvLayer.cpp
+    ${PROJECT_SOURCE_DIR}/Operators/src/Batch.cpp
+    ${PROJECT_SOURCE_DIR}/Operators/src/pooling.cpp
+    ${PROJECT_SOURCE_DIR}/Operators/src/flatten.cpp
+    ${PROJECT_SOURCE_DIR}/Operators/src/fullyconnected.cpp
+
+    ${PROJECT_SOURCE_DIR}/utilities/src/Comparisionutils.cpp
+    ${PROJECT_SOURCE_DIR}/utilities/src/Conversion.cpp
+    ${PROJECT_SOURCE_DIR}/utilities/src/readers.cpp
+    ${PROJECT_SOURCE_DIR}/utilities/src/SaveOutput.cpp
+    ${PROJECT_SOURCE_DIR}/utilities/src/Comparisionoutput.cpp
+
+    ${PROJECT_SOURCE_DIR}/Test_Operators/src/Conv1_test.cpp
+    ${PROJECT_SOURCE_DIR}/Test_Operators/src/Batch1_test.cpp
+    ${PROJECT_SOURCE_DIR}/Test_Operators/src/Pool1_test.cpp
+    ${PROJECT_SOURCE_DIR}/Test_Operators/src/Conv2_test.cpp
+    ${PROJECT_SOURCE_DIR}/Test_Operators/src/Batch2_test.cpp
+    ${PROJECT_SOURCE_DIR}/Test_Operators/src/Pool2_test.cpp
+    ${PROJECT_SOURCE_DIR}/Test_Operators/src/Conv3_test.cpp
+    ${PROJECT_SOURCE_DIR}/Test_Operators/src/Batch3_test.cpp
+    ${PROJECT_SOURCE_DIR}/Test_Operators/src/Pool3_test.cpp
+    ${PROJECT_SOURCE_DIR}/Test_Operators/src/flaten.cpp
+    ${PROJECT_SOURCE_DIR}/Test_Operators/src/Dense1_test.cpp
+    ${PROJECT_SOURCE_DIR}/Test_Operators/src/Dense2_test.cpp
+    ${PROJECT_SOURCE_DIR}/Test_Operators/src/BatchDense_test.cpp
+)
+
+# Add the executable
+add_executable(${PROJECT_NAME} ${SOURCES})

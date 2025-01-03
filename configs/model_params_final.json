@@ -1,0 +1,80 @@
+{
+    "conv1.weight": {
+        "path": "model_params_final\\conv1_weight.txt"
+    },
+    "conv1.bias": {
+        "path": "model_params_final\\conv1_bias.txt"
+    },
+    "conv2.weight": {
+        "path": "model_params_final\\conv2_weight.txt"
+    },
+    "conv2.bias": {
+        "path": "model_params_final\\conv2_bias.txt"
+    },
+    "conv3.weight": {
+        "path": "model_params_final\\conv3_weight.txt"
+    },
+    "conv3.bias": {
+        "path": "model_params_final\\conv3_bias.txt"
+    },
+    "bn1.weight": {
+        "path": "model_params_final\\bn1_weight.txt"
+    },
+    "bn1.bias": {
+        "path": "model_params_final\\bn1_bias.txt"
+    },
+    "bn2.weight": {
+        "path": "model_params_final\\bn2_weight.txt"
+    },
+    "bn2.bias": {
+        "path": "model_params_final\\bn2_bias.txt"
+    },
+    "bn3.weight": {
+        "path": "model_params_final\\bn3_weight.txt"
+    },
+    "bn3.bias": {
+        "path": "model_params_final\\bn3_bias.txt"
+    },
+    "fc1.weight": {
+        "path": "model_params_final\\fc1_weight.txt"
+    },
+    "fc1.bias": {
+        "path": "model_params_final\\fc1_bias.txt"
+    },
+    "fc2.weight": {
+        "path": "model_params_final\\fc2_weight.txt"
+    },
+    "fc2.bias": {
+        "path": "model_params_final\\fc2_bias.txt"
+    },
+    "bn_fc1.weight": {
+        "path": "model_params_final\\bn_fc1_weight.txt"
+    },
+    "bn_fc1.bias": {
+        "path": "model_params_final\\bn_fc1_bias.txt"
+    },
+    "bn1.running_mean": {
+        "path": "model_params_final\\bn1_running_mean.txt"
+    },
+    "bn1.running_var": {
+        "path": "model_params_final\\bn1_running_var.txt"
+    },
+    "bn2.running_mean": {
+        "path": "model_params_final\\bn2_running_mean.txt"
+    },
+    "bn2.running_var": {
+        "path": "model_params_final\\bn2_running_var.txt"
+    },
+    "bn3.running_mean": {
+        "path": "model_params_final\\bn3_running_mean.txt"
+    },
+    "bn3.running_var": {
+        "path": "model_params_final\\bn3_running_var.txt"
+    },
+    "bn_fc1.running_mean": {
+        "path": "model_params_final\\bn_fc1_running_mean.txt"
+    },
+    "bn_fc1.running_var": {
+        "path": "model_params_final\\bn_fc1_running_var.txt"
+    }
+}

@@ -57,79 +57,37 @@ This folder contains all the .cpp files that implement the logic for comparing t
 Similar to the other folders this folder contains header files in [include](https://github.com/SrivaniJayanthi/Build-CNN-with-CIFAR-10-using-CMake-in-C-/tree/master/utilities/include) and implementation in [src](https://github.com/SrivaniJayanthi/Build-CNN-with-CIFAR-10-using-CMake-in-C-/tree/master/utilities/src). <br>
 [Comparisionoutput.cpp](https://github.com/SrivaniJayanthi/Build-CNN-with-CIFAR-10-using-CMake-in-C-/blob/master/utilities/src/Comparisionoutput.cpp): Contains the logic for comparing the output between the PyTorch and custom CNN model. <br>
 [Comparisionutils.cpp](https://github.com/SrivaniJayanthi/Build-CNN-with-CIFAR-10-using-CMake-in-C-/blob/master/utilities/src/Comparisionutils.cpp): Used for comparing the values in each layer between the PyTorch and custom CNN models. <br>
-[Conversion.cpp](https://github.com/SrivaniJayanthi/Build-CNN-with-CIFAR-10-using-CMake-in-C-/blob/master/utilities/src/Conversion.cpp): This folder contains all the utility functions used for reading and printing matrices, as well as saving files.
-[SaveOutput.cpp](https://github.com/SrivaniJayanthi/Build-CNN-with-CIFAR-10-using-CMake-in-C-/blob/master/utilities/src/SaveOutput.cpp): This folder contains a function to the save the output to .txt file.
+[Conversion.cpp](https://github.com/SrivaniJayanthi/Build-CNN-with-CIFAR-10-using-CMake-in-C-/blob/master/utilities/src/Conversion.cpp): This folder contains all the utility functions used for reading and printing matrices, as well as saving files. <br>
+[SaveOutput.cpp](https://github.com/SrivaniJayanthi/Build-CNN-with-CIFAR-10-using-CMake-in-C-/blob/master/utilities/src/SaveOutput.cpp): This folder contains a function to the save the output to .txt file. <br>
 [readers.cpp](https://github.com/SrivaniJayanthi/Build-CNN-with-CIFAR-10-using-CMake-in-C-/blob/master/utilities/src/readers.cpp): This folder contains functions to read weights and bias from files.
 
+# Tools and versions:
+Operating System : Windows 11 <br>
+Version : 23H2 <br>
+Architecture : 64 bit OS <br>
+IDE : Visual Studio Code (1.96.2) <br>
+Build System : CMake (3.31.0) <br>
+Compiler : MinGW (14.2.0) <br>
+Library : nlohmann/json (3.11.3) <br>
+Version Control : Git (2.47.1) <br>
 
+# Run the project:
+1. git clone https://github.com/SrivaniJayanthi/Build-CNN-with-CIFAR-10-using-CMake-in-C-.git <br>
 
+2. cd cpp Project_MCW <br>
 
-OS and Tools used
+3. mkdir build <br>
 
+4. cd build <br>
 
-Operating System : Windows 11
+5. cmake .. <br>
 
+6. ./TestProject1.exe
 
-Version : 23H2
+# Interpret the Results:
 
+## Intermediate Layer Outputs:
+Check the [output](https://github.com/SrivaniJayanthi/Build-CNN-with-CIFAR-10-using-CMake-in-C-/tree/master/data/output) directory for results from each layer for the tested image.
 
-Architecture : 64 bit OS
-
-
-
-IDE : Visual Studio Code (1.96.2)
-
-
-Build System : CMake (3.31.0)
-
-
-Compiler : MinGW (14.2.0)
-
-
-Library : nlohmann/json (3.11.3)
-
-
-Version Control : Git (2.47.1)
-
-
-
-Run the project
-
-
-Clone this repository
-
-
-git clone https://github.com/SrivaniJayanthi/Build-CNN-with-CIFAR-10-using-CMake-in-C-.git
-
-cd cpp Project_MCW
-
-
-Create Build Directory
-
-mkdir build
-
-
-cd build
-
-
-Run CMake and executable
-
-cmake ..
-
-./TestProject1.exe
-
-
-
-How to Interpret the Results
-
-
-Intermediate Layer Outputs:
-
-
-Check the data/output directory for results from each layer for the tested image.
-
-
-Dual Test Results:
-
-
-View the Reports/Output.txt for comparisons between unit and model test outputs and also the final predictions for the input image.
+## Dual Test Results:
+View the [reports](https://github.com/SrivaniJayanthi/Build-CNN-with-CIFAR-10-using-CMake-in-C-/tree/master/report) for layer-by-layer comparisons (unit testing). Output files are also available in the same directory, and the results of these files will be displayed in the terminal once the project is built (model testing).

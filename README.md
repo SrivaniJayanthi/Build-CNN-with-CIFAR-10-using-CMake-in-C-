@@ -1,7 +1,6 @@
 About
 
 
-This project uses a CNN based (3 convolution + 2 dense) trained tensorflow model on cifar-10 dataset to test a image through layer-by-layer execution in C++. Model Layers attributes like channels, units, weights, filters, kernel sizes, bias are extracted and used in custom C++ implementations of each layer. During execution, intermediate outputs and details such as layer names and outputs for execution of each layer are logged. Outputs from the custom implementation are compared with the Python keras model to ensure the correct prediction.
 
 
 

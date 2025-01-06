@@ -6,7 +6,7 @@ To compile and execute this project, we utilize a pre-trained Convolutional Neur
 ## Parameter Extraction:
 From the pre-trained CNN model, we extract:
 
-Convolutional Layers: Weights and biases.
+Convolutional Layers: Weights and biases. br
 Batch Normalization Layers: Gamma, beta, running mean, and running variance.
 ## Custom CNN Development:
 Using the extracted parameters, we construct a customized Convolutional Neural Network. This implementation directly incorporates the learned parameters, ensuring it mimics the behavior of the pre-trained model.

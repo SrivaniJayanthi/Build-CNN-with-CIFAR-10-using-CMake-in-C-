@@ -15,6 +15,14 @@ Using the extracted parameters, we construct a customized Convolutional Neural N
 The custom CNN is rigorously tested and verified against the pre-trained PyTorch model. The expected outcome is to replicate the model's performance, achieving an accuracy of 81.5% on the CIFAR-10 dataset.
 
 
+# Contents of the project folder:
+
+## configs: 
+This folder contains a json file that contains path to the weights and bias. We need to use this file and extract the parameters, but since most of my parameters like kernel size, strides and padding are same for all convolutionary layers, I manually extracted them in the [main.cpp](https://github.com/SrivaniJayanthi/Build-CNN-with-CIFAR-10-using-CMake-in-C-/blob/master/src/main.cpp) itself.
+## data:
+This folder has three sub directories:
+### 1. input:
+
 
 
 
